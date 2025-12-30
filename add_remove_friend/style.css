@@ -32,24 +32,16 @@ body{
     font-size: 35px;
     margin: 5px 0;
 }
-#card button{
+#btn{
     background-color: rgb(0, 0, 255);
     border-radius: 25px;
     padding: 12px;
     font-weight: 700;
-}
-#add{
     cursor: pointer;
-    border:solid
+    border: solid;
 }
 #card h5{
    font-size: 20px;
     color:darkblue;
     padding: 15px;
-}
-#card #remove{
-    background-color: #fff;
-    color: black;
-    border: none;
-    pointer-events: none;
 }
