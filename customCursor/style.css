@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+    color:white;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color:aquamarine;
+    mix-blend-mode: difference;
+    position: absolute;
+    transition: all linear 0.2s;
+}
+h1{
+    font-size: 150px;
+}
