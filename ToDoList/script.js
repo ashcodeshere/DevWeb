@@ -2,8 +2,9 @@ var listContainer=document.getElementById('list-container');
 var inputBox=document.getElementById('input-box');
 
 function addTask(){
-    if(inputBox.value===''){
+    if(inputBox.value.trim()===''){
         alert("You haven't wrote anything");
+        return;
     }else{
         let li=document.createElement("li");
         li.innerHTML=inputBox.value;
@@ -25,6 +26,10 @@ listContainer.addEventListener("click",function(e){
         e.target.parentElement.remove();
         savedata();
     }
+},false);
+
+inputBox.addEventListener("keypress",function(e){
+    if(e.key==="Enter") addTask();
 },false);
 
 function savedata(){
