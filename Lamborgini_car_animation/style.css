@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow: hidden;
+    cursor: none;
+}
+#trees{
+    position: absolute;
+    bottom: 25vh;
+    height: 100%;
+    width: 400vw;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/571/326/small/horisontal-green-forest-landscape-panorama-illustration-layered-trees-background-vector.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    animation: treesMove linear 2s infinite;
+}
+@keyframes treesMove{
+    100%{
+        transform: translateX(-200vw);
+    }
+}
+#track{
+    height: 60vh;
+    width: 800vw;
+    top:70vh;
+    background-image: url(./track.png);
+    position: absolute;
+    animation: carMove linear 0.16s infinite;
+}
+#car{
+    height: 85px;
+    width: 380px;
+    background-image:url(./car_body.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 291px;
+    bottom: 25vh;
+    animation: shake linear 6s infinite;
+}
+.wheelleft img{
+    width:64px;
+    position: relative;
+    top:44px;
+    left: 50px;
+    animation: wheelRotation linear 0.26s infinite;
+}
+.wheelright img{
+    width:69px;
+    position: relative;
+    top:-23px;
+    left: 239px;
+    animation: wheelRotation linear 0.26s infinite;
+}
+@keyframes wheelRotation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes carMove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+@keyframes shake{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+@keyframes cloudmove{
+    100%{
+        transform: translateX(-200vw);
+    }
+}
